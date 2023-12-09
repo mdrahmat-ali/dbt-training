@@ -7,4 +7,10 @@ sources:
     tables:
       - name: customer
       - name: orders
-      - name: product
+        columns:
+          - name: orderid
+            tests:
+              - unique
+              - not_null
+      - name: product      
+            
